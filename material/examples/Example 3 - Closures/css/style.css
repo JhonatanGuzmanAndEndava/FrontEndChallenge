@@ -1,0 +1,35 @@
+body{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+.content {
+	width: 800px;
+	margin: 100px auto;	
+}
+body {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+}
+
+h1 {
+	font-size: 1.5em;
+}
+h2 {
+	font-size: 1.2em;
+} 
+a {
+	display: inline-block;
+	padding: 16px;
+	font-weight: bold;
+	font-size: 16px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	border: 3px solid black;
+	text-decoration: none;
+	color: black !important;
+}
+a:focus {
+	background: black;
+	color: white !important;
+}

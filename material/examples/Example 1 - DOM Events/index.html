@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Example 1</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css"> 
+    <script type="text/javascript">
+        // Define function when window loads
+        window.onload = function() {
+            var container = document.querySelector('.container');
+            var birdsOne = document.querySelector('.birds-1');
+            var birdsTwo = document.querySelector('.birds-2');
+
+            container.addEventListener('mousemove', function(e){
+                var posX = e.clientX;
+                var posY = e.clientY;
+                
+                birdsOne.style.transform = 'translateX(' + posX/100 + '%) translateY(' + posY/100 + '%)';
+                birdsTwo.style.transform = 'translateX(' + posX/100 + '%) translateY(' + posY/250 + '%)';
+                container.style = 'background-position:'+ posX/80 +'px center';
+
+
+            });
+        }
+            // Define Variables to select HTML elements
+            
+            // Add mouse event listener to wrapper
+
+                // Define variables for mouse position in X and Y
+
+                // Modify transform property from the HTML elements 
+                // Modify background position property for container
+        
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="birds-1"></div>
+        <div class="birds-2"></div>
+    </div>
+</body>
+</html>

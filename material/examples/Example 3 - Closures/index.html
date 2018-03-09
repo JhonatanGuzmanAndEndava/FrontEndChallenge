@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Example 1</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css"> 
+    <script type="text/javascript">
+        // Set window load function 
+            window.onload = function() {
+                function makeSizer(size) {
+                    return function() {
+                        document.body.style.fontSize = size + 'px';
+                    }
+                }
+
+                var size12 = makeSizer(12);
+                var size14 = makeSizer(14);
+                var size16 = makeSizer(16);
+                
+                document.getElementById('size-12').onclick = size12;
+                document.getElementById('size-14').onclick = size14;
+                document.getElementById('size-16').onclick = size16;
+            }
+            
+            // Declare parent function receiving size parameter
+                // Rerurn a function that changes body font size
+            
+            // declare closures as variables 12, 14, 16
+
+            // add click events for each closure
+        
+        
+    </script>
+</head>
+<body>
+    <div class="content">
+        <a href="#" id="size-12">12</a>
+        <a href="#" id="size-14">14</a>
+        <a href="#" id="size-16">16</a>
+        <h1>Phasellus hendrerit scelerisque eleifend.</h1>
+        <h2>Fusce eu nisl in libero consequat hendrerit nec a dui.</h2>
+        <p>Etiam id nibh vitae ante ornare elementum pretium et odio. Sed sit amet ex nisl. Vivamus rhoncus mi dui, hendrerit congue urna sodales sit amet. Mauris imperdiet massa libero, nec bibendum mi hendrerit in. Aliquam ante risus, imperdiet nec aliquet id, imperdiet eu purus. Curabitur id vestibulum ex. Curabitur tempor dui at velit hendrerit, in blandit tortor viverra. Proin gravida ligula sit amet arcu euismod hendrerit. Duis egestas mi purus, ut consectetur justo bibendum nec. Phasellus augue turpis, euismod vel lobortis sit amet, efficitur congue dolor.</p>
+        <h2>Fusce eu nisl in libero consequat hendrerit nec a dui.</h2>
+        <p>Etiam id nibh vitae ante ornare elementum pretium et odio. Sed sit amet ex nisl. Vivamus rhoncus mi dui, hendrerit congue urna sodales sit amet. Mauris imperdiet massa libero, nec bibendum mi hendrerit in. Aliquam ante risus, imperdiet nec aliquet id, imperdiet eu purus. Curabitur id vestibulum ex. Curabitur tempor dui at velit hendrerit, in blandit tortor viverra. Proin gravida ligula sit amet arcu euismod hendrerit. Duis egestas mi purus, ut consectetur justo bibendum nec. Phasellus augue turpis, euismod vel lobortis sit amet, efficitur congue dolor.</p>
+        <h2>Fusce eu nisl in libero consequat hendrerit nec a dui.</h2>
+        <p>Etiam id nibh vitae ante ornare elementum pretium et odio. Sed sit amet ex nisl. Vivamus rhoncus mi dui, hendrerit congue urna sodales sit amet. Mauris imperdiet massa libero, nec bibendum mi hendrerit in. Aliquam ante risus, imperdiet nec aliquet id, imperdiet eu purus. Curabitur id vestibulum ex. Curabitur tempor dui at velit hendrerit, in blandit tortor viverra. Proin gravida ligula sit amet arcu euismod hendrerit. Duis egestas mi purus, ut consectetur justo bibendum nec. Phasellus augue turpis, euismod vel lobortis sit amet, efficitur congue dolor.</p>
+        <h2>Fusce eu nisl in libero consequat hendrerit nec a dui.</h2>
+        <p>Etiam id nibh vitae ante ornare elementum pretium et odio. Sed sit amet ex nisl. Vivamus rhoncus mi dui, hendrerit congue urna sodales sit amet. Mauris imperdiet massa libero, nec bibendum mi hendrerit in. Aliquam ante risus, imperdiet nec aliquet id, imperdiet eu purus. Curabitur id vestibulum ex. Curabitur tempor dui at velit hendrerit, in blandit tortor viverra. Proin gravida ligula sit amet arcu euismod hendrerit. Duis egestas mi purus, ut consectetur justo bibendum nec. Phasellus augue turpis, euismod vel lobortis sit amet, efficitur congue dolor.</p>
+    </div>
+</body>
+</html>

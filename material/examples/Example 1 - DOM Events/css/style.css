@@ -1,0 +1,38 @@
+body{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+	background:#F5F6F8;
+}
+
+.container{
+	width:100%;
+	min-height: 700px;
+	position: relative;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-image: url(http://burlak.me/wp-content/themes/eugeneburlak/images/background.jpg);
+	background-size: cover;
+	overflow: hidden;
+}
+
+.birds-1, .birds-2{
+	position: absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	z-index: 1;
+}
+
+.birds-1{
+	background-image: url(http://burlak.me/wp-content/themes/eugeneburlak/images/layer-1.png);
+	z-index: 2;
+}
+
+.birds-2{
+  background-image: url(http://burlak.me/wp-content/themes/eugeneburlak/images/layer-2.png);
+  opacity: .5;
+}
