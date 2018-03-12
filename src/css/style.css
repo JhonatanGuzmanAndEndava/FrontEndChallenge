@@ -11,6 +11,8 @@ body {
 .menu {
     background-color: #ff3f10;
     height: 58px;
+    border-top-left-radius: 20px;  
+    border-top-right-radius: 20px;
 }
 
 .menu ul {
@@ -39,14 +41,38 @@ body {
 .container {
     height: 700px;
     text-align: center;
-    background: url("../img/endava-bg.jpg");
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("../img/endava-bg.jpg");
     background-position: center;
     background-size: cover;
-    /*background-color: rgba(0,0,0,0.2);*/
+}
+
+.text {
+    padding-left: 350px;
+    padding-top: 100px;
+    width: 825px;
+    text-align: center;
+    font-size: 78px;
+    color: #eee;
 }
 
 .footer {
-    padding: 20px;
+    height: 200px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    background: #ff3f10;
+    border-bottom-left-radius: 20px;  
+    border-bottom-right-radius: 20px;
+}
+
+.footer-col {
+    padding: 15px;
+    width: 380px;
+    float: left;
+}
+
+.footer-col h4 {
     text-align: center;
-    background: #ddd;
+    font-size: 18px;
+    color: #eee;
 }
