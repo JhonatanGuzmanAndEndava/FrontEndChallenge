@@ -56,10 +56,9 @@ body {
 }
 
 .footer {
-    height: 200px;
+    height: 250px;
     padding-left: 20px;
     padding-right: 20px;
-    padding-bottom: 20px;
     background: #ff3f10;
     border-bottom-left-radius: 20px;  
     border-bottom-right-radius: 20px;
@@ -74,5 +73,22 @@ body {
 .footer-col h4 {
     text-align: center;
     font-size: 18px;
+    color: #eee;
+}
+
+.footer-col ul {
+    list-style-type: none;
+}
+
+.footer-col li a {
+    display: inline-block;
+    color: #eee;
+    text-align: center;
+    text-decoration: none;
+}
+
+.footer p {
+    margin: 0px;
+    text-align: center;
     color: #eee;
 }
