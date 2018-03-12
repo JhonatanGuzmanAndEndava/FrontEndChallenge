@@ -1,25 +1,52 @@
-ul {
-	background-color: #ff3f10;
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+    background: #eee;
+    padding: 0px 150px;
+}
+
+.menu {
+    background-color: #ff3f10;
+    height: 58px;
+}
+
+.menu ul {
     list-style-type: none;
-    position: fixed;
-    overflow: hidden;
     top: 0;
-    width: 80%;
 }
 
-li {
+.menu li {
     float: left;
+    font-size: 20px;
 }
 
-li a {
+.menu li a {
     display: inline-block;
-    color: white;
+    color: #eee;
     text-align: center;
     text-decoration: none;
     padding: 14px 16px;
 }
 
-li a:hover {
-    background-color: white;
+.menu li a:hover {
+    background-color: #eee;
     color: #ff3f10;
+}
+
+.container {
+    height: 700px;
+    text-align: center;
+    background: url("../img/endava-bg.jpg");
+    background-position: center;
+    background-size: cover;
+    /*background-color: rgba(0,0,0,0.2);*/
+}
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
 }
