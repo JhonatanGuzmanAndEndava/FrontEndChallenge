@@ -5,7 +5,7 @@
 body {
     font-family: 'Oswald', sans-serif;
     background: #eee;
-    /*padding: 0px 150px;*/
+    margin: 0px 100px; /*Dangerous*/
 }
 
 .menu {
@@ -15,7 +15,14 @@ body {
     border-top-right-radius: 20px;
 }
 
+.menu .logo {
+    padding-top: 10px;
+    padding-left: 10px;
+    float: left;
+}
+
 .menu ul {
+    padding-left: 300px;
     list-style-type: none;
     top: 0;
 }
@@ -38,25 +45,33 @@ body {
     color: #ff3f10;
 }
 
+.menu input[type=text] {
+    height: 45px;
+    display: none;
+    border: none;
+    float: left;
+    border-bottom: 2px solid #eee;
+    color:#eee;  
+    background-color: #ff3f10;
+    margin-left: 700px;
+}
+
 .submenu li ul {
     display: none;
     margin: 0px;
     padding: 0px;
-    color: #000;
     background-color:#eee;
 }
 
-.submenu li:hover ul {
-    display: block;
-}
-
-.submenu ul li {
+.submenu li ul li {
     float: none;
+    font-size: 12px;
 }
 
-/*.submenu li:hover ul {
-    display: inline;
-}*/
+.submenu li ul li a {
+    color: #000;
+    text-align: center;
+}
 
 .container {
     height: 700px;
@@ -111,7 +126,7 @@ body {
     display: inline-block;
     float: none;
     margin: 0px;
-    padding: 0px 550px;
+    padding: 0px 500px;
     text-align: center;
     color: #eee;
 }

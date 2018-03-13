@@ -22,27 +22,18 @@
     <p id="demo"></p>
 
     <div class="menu">
+        <img class="logo" src="/images/LogoEndava.png" alt="Endava Logo">
         <ul>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Projects</a></li>
-            <div class="submenu">
-            <li><a href="#">Careers</a>
-                <ul>
-                    <li><a href="#">Applications Management</a></li>
-                    <li><a href="#">Development</a></li>
-                    <li><a href="#">Testing</a></li>
-                    <li><a href="#">Project Management</a></li>
-                    <li><a href="#">Security</a></li>
-                    <li><a href="#">Business Operations</a></li>
-                    <li><a href="#">Analysis and Architecture</a></li>
-                </ul>
-            </li>
-            </div>
-            <li><a href="#">News</a></li>
-            <li><a href="#">Events</a></li>
-            <li><a href="#">Contact</a></li>
-            <li style="float:right"><a href="#" > Search</a></li>
+            <div id="nav"></div>
         </ul> 
+
+        <form>
+            <input type="text" name="search" placeholder="Enter your search here.." size="50">
+        </form>
+
+        <ul>
+            <li style="float:right; display: block;" onclick="showSearchBar()"><a class="fa fa-search" style="font-size: 30px;" href="#" ></a></li>
+        </ul>
     </div>
 
     <div class="container">
