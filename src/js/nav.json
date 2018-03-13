@@ -1,0 +1,21 @@
+{
+    "elements":[
+            "About",
+            "Projects",
+            "Careers",
+            "News",
+            "Events",
+            "Contact",
+            "Search"
+    ],
+
+    "careers": [
+        "Applications Management",
+        "Development",
+        "Testing",
+        "Project Management",
+        "Security",
+        "Business Operations",
+        "Analysis and Architecture"
+    ]
+}

@@ -61,7 +61,7 @@ body {
 .container {
     height: 700px;
     text-align: center;
-    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("../img/endava-bg.jpg");
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("/images/endava-bg.jpg");
     background-position: center;
     background-size: cover;
 }
