@@ -57,8 +57,9 @@ body {
 }
 
 .submenu li ul {
+    position: absolute;
     display: none;
-    margin: 0px;
+    margin-top: 74px;
     padding: 0px;
     background-color:#eee;
 }
