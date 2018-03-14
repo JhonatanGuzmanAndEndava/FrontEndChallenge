@@ -1,4 +1,35 @@
-// JS Here!
+var isOpenMenu = false;
+
+function showSubmenu() {
+    var myElement = document.querySelector('.submenu li ul');
+    var bodyElement = document.querySelector('.container');
+    if(!isOpenMenu) {
+        myElement.style.display = "block";
+        bodyElement.style.background = "linear-gradient(rgba(0,0,0,0.5),rgba(0,0,255,0.5)),url(\"/images/endava-bg.jpg\")";
+        bodyElement.style.backgroundPosition = "center";
+        bodyElement.style.backgroundSize = "cover";
+        isOpenMenu = true;
+    }else{   
+        myElement.style.display = "none";
+        bodyElement.style.background = "linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(\"/images/endava-bg.jpg\")";
+        bodyElement.style.backgroundPosition = "center";
+        bodyElement.style.backgroundSize = "cover";
+        isOpenMenu = false;
+    }
+}
+
+window.addEventListener('mouseup', function(event){
+    var myElement = document.querySelector('.submenu li ul');
+    var bodyElement = document.querySelector('.container');
+	if (event.target != myElement && event.target.parentNode != myElement){
+        myElement.style.display = "none";
+        bodyElement.style.background = "linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(\"/images/endava-bg.jpg\")";
+        bodyElement.style.backgroundPosition = "center";
+        bodyElement.style.backgroundSize = "cover";
+        isOpenMenu = false;
+    }
+});
+
 var xmlhttp = new XMLHttpRequest();
 xmlhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
@@ -31,26 +62,6 @@ xmlhttp.onreadystatechange = function() {
 };
 xmlhttp.open("GET", "/data/nav.json", true);
 xmlhttp.send();
-
-var isOpenMenu = false;
-
-function showSubmenu() {
-    var myElement = document.querySelector('.submenu li ul');
-    var bodyElement = document.querySelector('.container');
-    if(!isOpenMenu) {
-        myElement.style.display = "block";
-        bodyElement.style.background = "linear-gradient(rgba(0,0,0,0.5),rgba(0,0,255,0.5)),url(\"/images/endava-bg.jpg\")";
-        bodyElement.style.backgroundPosition = "center";
-        bodyElement.style.backgroundSize = "cover";
-        isOpenMenu = true;
-    }else{   
-        myElement.style.display = "none";
-        bodyElement.style.background = "linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(\"/images/endava-bg.jpg\")";
-        bodyElement.style.backgroundPosition = "center";
-        bodyElement.style.backgroundSize = "cover";
-        isOpenMenu = false;
-    }
-}
 
 var isShowingBar = false;
 
