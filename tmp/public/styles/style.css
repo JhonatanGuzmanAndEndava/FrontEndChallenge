@@ -5,14 +5,11 @@
 body {
     font-family: 'Oswald', sans-serif;
     background: #eee;
-    margin: 0% 5%;
 }
 
 .menu {
     background-color: #ff3f10;
     height: 58px;
-    border-top-left-radius: 20px;  
-    border-top-right-radius: 20px;
 }
 
 .menu .logo {
@@ -110,11 +107,8 @@ body {
 }
 
 .footer {
-    margin-bottom: 2%;
     height: 250px;
     background: #ff3f10;
-    border-bottom-left-radius: 20px;  
-    border-bottom-right-radius: 20px;
 }
 
 .footer-col {
