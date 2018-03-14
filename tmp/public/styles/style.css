@@ -94,6 +94,7 @@ body {
 }
 
 .footer {
+    margin-bottom: 2%;
     height: 250px;
     background: #ff3f10;
     border-bottom-left-radius: 20px;  
