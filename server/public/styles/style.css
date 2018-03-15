@@ -7,6 +7,19 @@ body {
     background: #eee;
 }
 
+.press {
+    background-color: #eee;
+    color: #ff3f10;
+}
+
+.orangecolor {
+    color: #ff3f10;
+}
+
+.whitecolor {
+    color: #eee;
+}
+
 .menu {
     background-color: #ff3f10;
     height: 58px;
@@ -30,8 +43,8 @@ body {
 }
 
 .menu li a {
-    display: inline-block;
-    color: #eee;
+    display: block;
+    /*color: #eee;*/
     text-align: center;
     text-decoration: none;
     padding: 14px 16px;
@@ -88,6 +101,12 @@ body {
 
 .hometext p {
     margin: 0%;
+}
+
+.hometext hr {
+    color: #ff3f10;
+    border: 10px solid;
+    margin: 0% 35%; 
 }
 
 .content {
